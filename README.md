@@ -9,6 +9,7 @@ I'm teaching myself the basics behind machine learning. This repo will be the du
 1. [MNIST Digits](https://github.com/amandagrice/machine-learning-practice/tree/master/MNIST%20Digits) - A neural net that can read handwritten numbers. 
 2. [IMDB Classification](https://github.com/amandagrice/machine-learning-practice/tree/master/IMDB%20Classification) - A neural net that classifies movie reviews from [IMDB](https://www.imdb.com/) as positive or negative.
 3. [Reuters Classification](https://github.com/amandagrice/machine-learning-practice/tree/master/Reuters%20Classification) - A neural net that can label Reuters newswires with one of 46 topics. 
+4. [Boston Housing Price Predictor](https://github.com/amandagrice/machine-learning-practice/tree/master/Boston%20Housing%20Prices%2070s) - A neural net that predicts housing prices for Boston suburbs from 70s data.
 
 ---
 
@@ -62,3 +63,12 @@ I'm teaching myself the basics behind machine learning. This repo will be the du
 - CPU
 - GPU
 - Moore’s Law
+- regression
+- feature-wise normalization
+- scalar regression
+- linear layouts
+- MSE (Mean Squared Error)
+- MAE (Mean Absolute Error)
+- variance
+- K-Fold Cross Validation
+- epochs
