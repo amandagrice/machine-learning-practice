@@ -124,6 +124,19 @@ I'm teaching myself the basics behind machine learning. This repo will be the du
     - **Normalization** - change data to use a common scale. Generally small, homogenous values. Ex. turn everything into a 0-1 range with one standard deviation.
     - **Handling missing values**
     - **Feature Extraction / Feature Engineering** -- make a problem easier by expressing it in a simpler way. Requires a good understanding of the problem in depth. This was far more necessary with shallow learning. 
+    
+- **Regularization** -- the process of adding information in order to solve an ill-posed problem or to prevent overfitting
+- The simplest way to prevent overfitting is to reduce the size of the model.
+- **Model Capacity / Memorization Capacity** -- the number of learnable parameters in a model.
+- **Occam’s Razor** -- given two explanations for something, the simpler one is most likely to be correct.
+- **Entropy** - measure of randomness
+- **Weight Regularization** -- adding to the cost function a cost associated with having larger weights. This limits the complexity and entropy of a network and helps prevent overfitting. 
+    - **L1 Regularization** - the cost added is proportional to the absolute value of the weight coefficients (the L1 norm of the weights)
+    - **L2 Regularization** - the cost added is proportional to the square of the value of the weight coefficients (the L2 norm of the weights)
+    - Also called **weight decay**
+    - **Dropout** - when applied to a layer, a fraction (called the **dropout rate**) of the features are set to 0 during training. During testing, a layer’s output values are scaled down by a factor relative to the dropout rate. This is one of the most commonly used regularization techniques in neural networks. The introduction of noise like this can help prevent insignificant happenstance patterns. 
+- **Non-stationary problem** -- what you’re trying to model changes over time
+- **Statistical power** - if your model can beat a random baseline
 
 
 
