@@ -29,7 +29,7 @@ K-Fold Validation Steps:
     2. Make the remaining groups the training data set
     3. Fit a model on the training set and evaluate it on the test set
     4. Keep the evaluation score and discard the model
-5. Average the evaluation scores.
+4. Average the evaluation scores.
 
 With k=4 and 100 epochs I got the following values for MAE:
 [2.0235395431518555, 2.460193157196045, 2.4647674560546875, 2.5240468978881836]
