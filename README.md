@@ -138,6 +138,14 @@ I'm teaching myself the basics behind machine learning. This repo will be the du
 - **Non-stationary problem** -- what you’re trying to model changes over time
 - **Statistical power** - if your model can beat a random baseline
 
+| Problem Type | Last Layer Activation | Loss Function  |
+| ------------- |-------------| -----|
+| binary classification     | sigmoid | binary_crossentropy |
+| multiclass, single-label classification      | softmax      |   categorical_crossentropy |
+| multiclass, multi-label classification | sigmoid      |    binary_crossentropy |
+| regression to arbitrary values      | None      |   mse |
+| regression to values between 0 and 1 | sigmoid      |    mse or binary_crossentropy |
+
 
 
 
