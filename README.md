@@ -147,5 +147,17 @@ I'm teaching myself the basics behind machine learning. This repo will be the du
 | regression to values between 0 and 1 | sigmoid      |    mse or binary_crossentropy |
 
 
-
+- **Convolutional Neural Networks** (convnets)
+    - Used frequently in computer vision
+    - Dense layers learn global patterns, but convolutional layers can learn local patterns. For example, in the MNIST problem, a dense layer can only find patterns with all pixels but a convolutional layer can learn patterns in part of the image. 
+    - The patterns convnets learn are **translation invariant**. (They can recognize a pattern even if it’s found in a different part of the image.)
+    - Convnets can learn **spatial hierarchies of patterns.** (Meaning it can learn abstract visual concepts based on smaller concepts.)
+- Convnets operate over 3D tensors called **feature maps** which have two spatial axes (**height** and **width**) and a **depth / channel** axis. 
+    - For an RGB image, the depth axis has a dimension of 3.
+    - For a black and white image, the depth axis has 1 dimension (level of gray).
+- The convolutional layer extracts patches from the input tensor, applies a transformation to all patches, and exports an **output feature map** (a 3D tensor with a depth based on a parameter to the layer). The depth no longer stands for color but **filters**. 
+- Output feature maps vary in size from input feature maps because the size of the sliding window can only fit perfectly in so many spots. This is called a **border effect**.
+You can keep input and output feature maps the same size by adding **padding** to the edges. 
+- **Stride** refers to how many steps the sliding window of the convnet moves. By default, it’s 1. But the filter windows can overlap if the stride is changed. This is rarely used.
+- The **Max-Pooling Operation** is used to downsize feature maps. It usually uses 2 by 2 windows. Instead of transforming using learn transformations, it uses a hardcoded max tensor operation. This helps limit the number of coefficients to process and helps with spatial-filter hierarchies (because each layer starts looking at bigger and bigger windows).
 
