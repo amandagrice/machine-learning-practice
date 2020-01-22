@@ -4,6 +4,8 @@ This is a neural network to identify handwritten digits created using the [Keras
 
 ![MNIST Data Sample](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
 
-It has an accuracy of 0.9782999753952026 or ~97.8%. 
-
 I used Francois Chollet's book "Deep Learning with Python" as a tutorial. 
+
+There are 2 versions:
+- mnist_digits.py has 2 regular dense layers and has accuracy of 98.2%
+- mnist_digits_convnet.py uses a convolutional neural network and has accuracy of 99.2%
